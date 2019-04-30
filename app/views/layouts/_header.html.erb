@@ -1,11 +1,29 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-fixed-top">
   <div class="container">
-    <%= link_to "sample app", '#', id: "logo" %>
+    <%= link_to "YOURCOURSE", '#', class: "btn btn-info", id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
-        <li><%= link_to "Help",   '#' %></li>
-        <li><%= link_to "Log in", '#' %></li>
+        <li class="dropdown" id="header-right-margin">
+          <a href="#" class="dropdown-toggle btn btn-info" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-sort-by-alphabet"></span> Category <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Web Development", '#' %></li>
+            <li><%= link_to "Java", '#' %></li>
+            <li><%= link_to "Full Stack Dev", '#' %></li>
+            <li><%= link_to "iOS Engineering", '#' %></li>
+          </ul>
+        </li>
+        <li class="dropdown" id="header-right-margin">
+          <a href="#" class="dropdown-toggle btn btn-info" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-send"></span> Location <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "14.10.31", '#' %></li>
+            <li><%= link_to "14.08.26", '#' %></li>
+            <li><%= link_to "14.10.30", '#' %></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </div>
