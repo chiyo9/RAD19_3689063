@@ -17,7 +17,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     get signup_path
     assert_difference 'User.count', 1 do
       post users_path, params: { user: { name:  "Julia",
-                                         email: "Julia.W@rmit.edu.au",
+                                         email: "Julia.Yan@rmit.edu.au",
                                          password:              "246810",
                                          password_confirmation: "246810" } }
     end

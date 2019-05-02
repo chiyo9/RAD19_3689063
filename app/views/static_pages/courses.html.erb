@@ -1,6 +1,74 @@
 <% provide(:title, "Course") %>
-<h1>Contact</h1>
-<p>
-  Contact the Ruby on Rails Tutorial about the sample app at the
-  <a href="https://www.railstutorial.org/contact">contact page</a>.
-</p>
+<h1><b>All Courses</b></h1>
+<hr>
+<div class="container" id="course-page-tab">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#courses">Courses</a></li>
+    <li><a data-toggle="tab" href="#coordinators">Coordinators</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="courses" class="tab-pane fade in active">
+      
+      <section class="course_info">
+        <div class="col-md-2">
+          <%= image_tag("female.png", alt: "Female Logo", class: "img-responsive") %>
+          <p><b>Coordinator name: Julia Yan</b></p>
+        </div>
+        <div class="jumbotron col-md-6">
+          <h4><a href='#'>Rapid Application Development</a></h4>
+          <h5>Prerequisite: Web Programming</h5>
+          <h5>Category: Web Development</h5>
+          <h5>Location: <a href='#'>14.10.31</a> &nbsp; <a href='#'>14.08.26</a></h5>
+          <h6>Created: 15 days ago</h6>
+          <h5 style="text-align: right"><a href:""><span class="glyphicon glyphicon-thumbs-up"> 4 &nbsp; <span class="glyphicon glyphicon-thumbs-down"> 0</a></span></h5>
+        </div>
+      </section>
+      
+      <section class="course_info">
+        <div class="col-md-2">
+          <%= image_tag("male.png", alt: "Male Logo", class: "img-responsive") %>
+          <p><b>Coordinator name: Tony Jiang</b></p>
+        </div>
+        <div class="jumbotron col-md-6">
+          <h4><a href='#'>Capstone Project</a></h4>
+          <h5>Prerequisite: Advanced Programming</h5>
+          <h5>Category: Full Stack Dev</h5>
+          <h5>Location: <a href='#'>14.10.31</a></h5>
+          <h6>Created: 5 minutes ago</h6>
+          <h5 style="text-align: right"><a href:""><span class="glyphicon glyphicon-thumbs-up"> 2 &nbsp; <span class="glyphicon glyphicon-thumbs-down"> 0</a></span></h5>
+        </div>
+      </section>
+      
+      <section class="course_info">
+        <div class="col-md-2">
+          <%= image_tag("male.png", alt: "Male Logo", class: "img-responsive") %>
+          <p><b>Coordinator name: Alex Jiang</b></p>
+        </div>
+        <div class="jumbotron col-md-6">
+          <h4><a href='#'>Advanced iOS/OSX Programming</a></h4>
+          <h5>Prerequisite: 3 years iOS or relevant experience</h5>
+          <h5>Category: iOS Engineering</h5>
+          <h5>Location: <a href='#'>14.10.30</a></h5>
+          <h6>Created: 8 days ago</h6>
+          <h5 style="text-align: right"><a href:""><span class="glyphicon glyphicon-thumbs-up"> 1 &nbsp; <span class="glyphicon glyphicon-thumbs-down"> 0</a></span></h5>
+        </div>
+      </section>
+      
+    </div>
+    <div id="coordinators" class="tab-pane fade">
+      
+      <div class="col-md-2 col-md-offset-5">
+        <%= image_tag("male.png", alt: "Male Logo", class: "img-responsive") %>
+        <h6><b>Coordinator name: Tony Jiang</b></h6>
+      </div>
+      
+      <div class="col-md-2 col-md-offset-5">
+        <%= image_tag("female.png", alt: "Female Logo", class: "img-responsive") %>
+        <h6><b>Coordinator name: Julia Yan</b></h6>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
