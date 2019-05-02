@@ -8,3 +8,21 @@
     Sign up now!
   <% end %>
 </div>
+<div class="container">
+  <div class="col-md-4">
+    <p id="home-page-nav-title"><b>View Course as Guest User</b></p>
+    <p id="home-page-nav-context">Browse and view courses as a guest and sign up later</p>
+    <%= link_to courses_path, class: "btn btn-lg btn-success" do %>
+      <span class="glyphicon glyphicon glyphicon-book"></span>
+      Browse all courses
+    <% end %>
+  </div>
+  <div class="col-md-4">
+    <p id="home-page-nav-title"><b>Sign in to your account</b></p>
+    <p id="home-page-nav-context">Update your courses, rate courses, view coordinator informations</p>
+    <%= link_to courses_path, class: "btn btn-lg btn-success" do %>
+      <span class="glyphicon glyphicon glyphicon-log-in"></span>
+      Log In to your account
+    <% end %>
+  </div>
+</div>
